@@ -1,0 +1,21 @@
+﻿@model Product
+
+
+<h1>Edycja produktu</h1>
+
+
+@using (Html.BeginForm("SaveProduct", "Shop", FormMethod.Post))
+{
+    <p>
+        Nazwa produktu: @Html.TextBoxFor(x => x.Name)
+    </p>
+    <p>
+        Cena: @Html.TextBoxFor(x => x.Price)
+    </p>
+    <p>
+        Opis @Html.TextAreaFor(x => x.Description)
+    </p>
+    <input type="submit" value="Zapisz" />
+}
+
+

@@ -1,0 +1,40 @@
+﻿<Window x:Class="FirstWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWpfApp"
+        mc:Ignorable="d"
+        Height="450" 
+        Width="879">
+    <Window.Title>
+        Pierwszy program WPF
+    </Window.Title>
+    <!--<Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Background" Value="AliceBlue"/>
+            <Setter Property="Foreground" Value="Chocolate"/>
+        </Style>
+    </Window.Resources>-->
+    <StackPanel VerticalAlignment="Center" 
+                HorizontalAlignment="Center"
+                Background="Bisque">
+        <StackPanel.Resources>
+            
+        </StackPanel.Resources>
+        <TextBlock Text="Podaj imię:"
+                   FontWeight="Bold"
+                   FontFamily="Arial" 
+                   Foreground="#FF15DE31"/>
+        <TextBox x:Name="textBoxName"
+                 Margin="0 10"/>
+        <TextBlock Text="Podaj adres e-mail:"/>
+        <TextBox Name="textBoxEmail"
+                 Margin="0 10"/>
+        <Button Content="Przywitaj się"
+                Click="Button_Click"
+                Margin="10"/>
+        
+        <TextBlock x:Name="textBlockHello"/>
+    </StackPanel>
+</Window>

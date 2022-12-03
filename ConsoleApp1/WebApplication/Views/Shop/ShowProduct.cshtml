@@ -1,0 +1,9 @@
+﻿@model Product
+
+<h1>Informacja o produkcie</h1>
+
+@Html.DisplayNameFor(x => x.Name) @Model.Name<br/>
+Cena: @Model.Price<br/>
+Opis: @Model.Description<br/>
+
+@Html.ActionLink("Powrót", "Index", "Shop")
